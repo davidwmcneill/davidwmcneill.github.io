@@ -1,1 +1,0 @@
-# davidwmcneill.github.io
