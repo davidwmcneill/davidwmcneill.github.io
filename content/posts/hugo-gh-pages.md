@@ -27,9 +27,10 @@ theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 ```
 
 ### Github Actions
-The [sample gh-actions](https://github.com/peaceiris/actions-gh-pages#getting-started) configuration can be found here with more details on the setup.
+The [sample gh-actions](https://github.com/peaceiris/actions-gh-pages#getting-started) configuration can be found here with more details on the setup.\
+Due to the use of the Theme module, the extended Hugo build is required.
 
-Don't for get to set the source to the ```gh-pages``` branch (settings -> pages)
+Don't forget to set the source to the ```gh-pages``` branch (settings -> pages)
 
 Push to main and voila!
 
