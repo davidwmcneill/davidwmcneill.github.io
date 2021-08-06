@@ -29,7 +29,7 @@ Hugo with a Theme I already had a quick-start Hugo site for testing a local k3d 
 This time around I decided to give it a go&mldr;.hosting on github
 I went slightly beyond the quick-start and used Hugo Modules for importing a theme, following the steps for the Ananke theme."><meta itemprop=datePublished content="2021-08-06T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-06T00:00:00+00:00">
-<meta itemprop=wordCount content="145">
+<meta itemprop=wordCount content="158">
 <meta itemprop=keywords content="hugo,github,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Hugo with GitHub Pages">
 <meta name=twitter:description content="Before writing a blog, there needs to be a blog&mldr;
@@ -95,8 +95,9 @@ A good place to start!</p>
 </code></pre></div><p>Add the theme&rsquo;s repo to your config.toml:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-al data-lang=al>theme = [&#34;github.com/theNewDynamic/gohugo-theme-ananke&#34;]
 </code></pre></div><h3 id=github-actions>Github Actions</h3>
-<p>The <a href=https://github.com/peaceiris/actions-gh-pages#getting-started>sample gh-actions</a> configuration can be found here with more details on the setup.</p>
-<p>Don&rsquo;t for get to set the source to the <code>gh-pages</code> branch (settings -> pages)</p>
+<p>The <a href=https://github.com/peaceiris/actions-gh-pages#getting-started>sample gh-actions</a> configuration can be found here with more details on the setup.<br>
+Due to the use of the Theme module, the extended Hugo build is required.</p>
+<p>Don&rsquo;t forget to set the source to the <code>gh-pages</code> branch (settings -> pages)</p>
 <p>Push to main and voila!</p>
 <p><a href=https://davidwmcneill.github.io/>https://davidwmcneill.github.io/</a></p>
 <ul class=pa0>
