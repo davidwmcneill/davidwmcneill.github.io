@@ -1,0 +1,7 @@
+relativeURLs = false
+canonifyURLs = true
+baseURL = "http://localhost:8080/gitops-hugo"
+
+languageCode = "en-us"
+title = "DevOps Blog"
+theme = "ananke"
