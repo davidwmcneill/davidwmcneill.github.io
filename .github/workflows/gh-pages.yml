@@ -22,7 +22,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify  --config config-main.toml,config-${DEPLOYMENT}.toml
         env:
           DEPLOYMENT: prod
 
