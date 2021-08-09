@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>argocd on</title><link>/tags/argocd/</link><description>Recent content in argocd on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/argocd/index.xml" rel="self" type="application/rss+xml"/><item><title>K3d with ArgoCD</title><link>/posts/k3d-argocd/</link><pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate><guid>/posts/k3d-argocd/</guid><description>The pre-ramble A quick look at what ArgoCD and K3d are&amp;hellip;
+What is ArgoCD?
+Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
+Top alternatives&amp;hellip;
+FluxCD What is K3d
+k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
+Top alternatives&amp;hellip;
+Kind Minikube The idea I&amp;rsquo;ve been working with ArgoCD in production for a few years now and it is in my opinion the biggest game changer in terms of Kubernetes continuous delivery management.</description></item></channel></rss>

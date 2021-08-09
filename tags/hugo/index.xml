@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on</title><link>/tags/hugo/</link><description>Recent content in hugo on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo with GitHub Pages</title><link>/posts/hugo-gh-pages/</link><pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate><guid>/posts/hugo-gh-pages/</guid><description>Before writing a blog, there needs to be a blog&amp;hellip;
 A good place to start!
-Hugo with a Theme I already had a quick-start Hugo site for testing a local k3d build pipeline and it was while creating this I stumbled upon the integration with github actions.
-This time around I decided to give it a go&amp;hellip;.hosting on github
-I went slightly beyond the quick-start and used Hugo Modules for importing a theme, following the steps for the Ananke theme.</description></item></channel></rss>
+Hugo to the rescue What is Hugo?
+Hugo is a static HTML and CSS website generator written in Go
+Hugo with a Theme I first crossed paths with Hugo while working on a project using the git-sync sidecar integration; Hugo is used as part of the demo configuration for this tool.
+I&amp;rsquo;ve since used Hugo for a demo local k3d build pipeline and it was while creating this I stumbled upon the integration with github actions.</description></item></channel></rss>
