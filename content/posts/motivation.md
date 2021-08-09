@@ -10,4 +10,4 @@ Typically I track my technical note taking using [Notion](https://www.notion.so/
 
 The premise of this blog is to build on these notes with a more formal summary for future reference (and hopefully help sharpen my knowledge on the subject matter)
 
-In some way this is inspired by the many hours I spend reading on [medium](https://medium.com/)
+In some way this is inspired by the many hours spent reading on [medium](https://medium.com/)

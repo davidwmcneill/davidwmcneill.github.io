@@ -8,16 +8,19 @@ tags: ['hugo', 'github']
 Before writing a blog, there needs to be a blog... \
 A good place to start!
 
+### Hugo to the rescue
+What is [Hugo](https://gohugo.io/getting-started/quick-start/)?
+> Hugo is a static HTML and CSS website generator written in Go
 ### Hugo with a Theme
+I first crossed paths with Hugo while working on a project using the [git-sync sidecar](https://github.com/kubernetes/git-sync) integration; Hugo is used as part of the demo configuration for this tool.\
+I've since used Hugo for a demo local k3d build pipeline and it was while creating this I stumbled upon the integration with github actions.
 
-I already had a [quick-start](https://gohugo.io/getting-started/quick-start/) Hugo site for testing a local k3d build pipeline and it was while creating this I stumbled upon the integration with github actions.
+There are noteworthy alternatives such as [Jekyll](https://github.com/jekyll/jekyll), but for now I'll give Hugo a go....[hosting on github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 
-This time around I decided to give it a go....[hosting on github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-
-I went slightly beyond the quick-start and used [Hugo Modules](https://gohugo.io/hugo-modules/use-modules/) for importing a theme, following the steps for the [Ananke theme](https://github.com/theNewDynamic/gohugo-theme-ananke#installation). This appears to be a more manageable approach over using git submodule.
+I went slightly beyond the quick-start and used [Hugo modules](https://gohugo.io/hugo-modules/use-modules/) for importing a theme, following the steps for the [Ananke theme](https://github.com/theNewDynamic/gohugo-theme-ananke#installation). This appears to be a more manageable approach over using git submodule.
 
 
-Fairly straight forward:
+Straight forward enough:
 ```al
 hugo mod init github.com/<your_user>/<your_project>
 ```
