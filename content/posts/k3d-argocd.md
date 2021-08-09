@@ -1,5 +1,5 @@
 ---
-title: "K3d with ArgoCD"
+title: "K3d + ArgoCD = Local GitOps"
 date: 2021-08-09
 draft: false
 tags: ['k3d', 'argocd']
@@ -41,7 +41,7 @@ It got me thinking about a seamless way to get from a developers local laptop to
 There are some great tutorials on setting up K3d locally and running ArgoCD (I'll link to these in the references).\
 My twist on this is to bootstrap the whole process down to a single command with as few pre-requisites as possible. I've been working on this [here](https://github.com/davidwmcneill/gitops-playground)
 
-Not wishing to rewrite the readme again here, the bootstrap wraps the k3d install script passing in a base level configuration for the cluster (To simulate a real custer on sorts as opposed to a single node).
+Not wishing to rewrite the readme again here, the bootstrap wraps the k3d install script passing in a base level configuration for the cluster (To simulate a real custer of sorts as opposed to a single node).
 
 ArgoCD gets installed using a Kubernetes job that runs Helm (This is to remove Helm itself as a prerequisite)\
 
