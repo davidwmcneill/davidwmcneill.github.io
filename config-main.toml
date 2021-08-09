@@ -1,6 +1,6 @@
-baseURL = "https://davidwmcneill.github.io/"
+baseURL = "/"
 languageCode = "en-us"
-title = "DevOps Blog"
+title = "A DevOps Odyssey"
 
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
@@ -31,7 +31,7 @@ resourceDir = "../resources"
 [params]
   favicon = ""
 #  site_logo = "img/logo.svg"
-#  description = "My DevOps Blog"
+#  description = "A DevOps Odyssey"
 #  twitter = "https://twitter.com/GoHugoIO"
   instagram = ""
   youtube = ""

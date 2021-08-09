@@ -1,5 +1,5 @@
 ---
-title: "DevOps Blog"
+title: "A DevOps Odyssey"
 description: "Tooling and more..."
 ---
 

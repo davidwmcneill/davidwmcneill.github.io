@@ -9,6 +9,7 @@ Before writing a blog, there needs to be a blog... \
 A good place to start!
 
 ### Hugo with a Theme
+
 I already had a [quick-start](https://gohugo.io/getting-started/quick-start/) Hugo site for testing a local k3d build pipeline and it was while creating this I stumbled upon the integration with github actions.
 
 This time around I decided to give it a go....[hosting on github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)

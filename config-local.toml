@@ -1,0 +1,2 @@
+relativeURLs = false
+baseURL = "http://localhost:8080/gitops-hugo"
