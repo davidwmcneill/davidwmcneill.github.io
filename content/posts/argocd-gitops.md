@@ -7,7 +7,7 @@ tags: ['gitops', 'argocd']
 ## GitOps in practice
 
 Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation...
----
+
 ## What is GitOps and why do I need it?
 
 Just another buzzword? I personally don't think so.\
@@ -20,7 +20,7 @@ Cant beat the feeling of looking at an ArgoCD dashboard that spans multiple clus
 
 This becomes even more powerful when the infrastructure tooling and the application stack itself can all be managed in exactly the same way. No need to access the running system anymore, absolutely everything is done via Git....
 
-- Who and when update 'x' service? Check the Git PR
+- Who and when updated 'x' service? Check the Git PR
 - We started seeing increased number of 4xx errors at 2pm, did anything change? Check Git
 - What is the diff between v1.45 and v1.46 in the Helm chart for 'x' service? Check ArgoCD (This can prove really useful for external Helm charts)
 
