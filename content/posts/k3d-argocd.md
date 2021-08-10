@@ -2,7 +2,7 @@
 title: "K3d + ArgoCD = Local GitOps"
 date: 2021-08-09
 draft: false
-tags: ['k3d', 'argocd']
+tags: ['k3d', 'argocd', 'gitops', 'kubernetes']
 ---
 
 ## The pre-ramble
@@ -41,9 +41,9 @@ It got me thinking about a seamless way to get from a developers local laptop to
 There are some great tutorials on setting up K3d locally and running ArgoCD (I'll link to these in the references).\
 My twist on this is to bootstrap the whole process down to a single command with as few pre-requisites as possible. I've been working on this [here](https://github.com/davidwmcneill/gitops-playground)
 
-Not wishing to rewrite the readme again here, the bootstrap wraps the k3d install script passing in a base level configuration for the cluster (To simulate a real custer of sorts as opposed to a single node).
+To summaries the readme: the bootstrap wraps the k3d install script passing in a base level configuration for the cluster (To simulate a real custer of sorts as opposed to a single node).
 
-ArgoCD gets installed using a Kubernetes job that runs Helm (This is to remove Helm itself as a prerequisite)\
+ArgoCD gets installed using a Kubernetes job that runs Helm (This is to remove Helm itself as a prerequisite)
 
 ---
 ## The GitOps magic
@@ -56,9 +56,9 @@ Ingress-Nginx and the rest of the application stack are managed using GitOps and
 
 ---
 ## Now what?
-In the time it takes to run the bootstrap a developer has a fully functional local Kubernetes cluster ready to work with GitOps! Developers can branch off 'Local' to shape the cluster to their needs and merge back in to share with other developers who will get the update all within a local context.
+In the time it takes to run the bootstrap a developer has a fully functional local Kubernetes cluster ready to work with GitOps! Developers can branch from 'Local' to shape the cluster to their needs and merge back in to share with other developers who will get the update all within a local context.
 
-The nice part is that we don't need to use loads of different local ports (as can sometimes be the case with docker compose). We can expose any browser based service we need via a path based ingress behind the ingress controller.
+The nice part is that we don't need to use a local port per service (as can sometimes be the case with docker compose). We can expose any browser based service we need via a path based ingress behind the ingress controller.
 
 
 In future posts I'll look at some of the projects I've deployed using this stack to learn new technologies!
