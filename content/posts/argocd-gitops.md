@@ -4,7 +4,7 @@ date: 2021-08-10
 draft: false
 tags: ['gitops', 'argocd']
 ---
-## GitOps in practice
+
 
 Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation...
 
@@ -36,17 +36,18 @@ This allows for a top level to bootstrap sub layers of apps.\
 In a production grade setup this can be really useful for grouping application stacks by teams, functions etc, each with their own project level permissions.\
 For simplicity in the local stack all apps are currently sitting under a single top level app and project, but it gives an idea for the use case.
 
+This also becomes really useful for generating the parent apps in a Helm template. There is a really nice example and explanation of this [here](https://github.com/stevesea/argocd-helm-app-of-apps-example) which I have used as a foundation for the application template.
+
 ### Templates and Manifests
 ArgoCD supports a range manifest types. Primarily I've used Helm. But more and more I see good justification to use Kustomize. I might look to use this more in the future.
 
 ---
 ## Tips and Tricks
 Through working with ArgoCD I've come across and number of well thought out features. Some of the most useful being:
-- Pulling the ArgoCD cli binary from the ArgoCD server. This is really useful when using the cli as part of a CICD pipeline. Whenever you upgrade ArgoCD, the cli used else where will always be on the same version
+- Pulling the ArgoCD [CLI binary](https://argoproj.github.io/argo-cd/user-guide/ci_automation/#synchronize-the-app-optional) directly from the ArgoCD server. This is really useful when using the cli as part of a CICD pipeline. Whenever you upgrade ArgoCD, the cli used elsewhere will always be on the same version
 
 
 ---
 ## Reference
 - https://www.weave.works/technologies/gitops/
 - https://www.weave.works/technologies/gitops-frequently-asked-questions/
-- 
