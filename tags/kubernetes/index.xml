@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kubernetes on A DevOps Odyssey</title><link>https://davidwmcneill.github.io/tags/kubernetes/</link><description>Recent content in kubernetes on A DevOps Odyssey</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidwmcneill.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>K3d + ArgoCD = Local GitOps</title><link>https://davidwmcneill.github.io/posts/k3d-argocd/</link><pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate><guid>https://davidwmcneill.github.io/posts/k3d-argocd/</guid><description>The pre-ramble A quick look at what ArgoCD and K3d are&amp;hellip;
+What is ArgoCD?
+Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
+Top alternatives&amp;hellip;
+FluxCD What is K3d
+k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
+Top alternatives&amp;hellip;
+Kind Minikube The idea I&amp;rsquo;ve been working with ArgoCD in production for a few years now and it is in my opinion the biggest game changer in terms of Kubernetes continuous delivery management.</description></item></channel></rss>

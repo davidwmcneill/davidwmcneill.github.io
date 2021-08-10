@@ -38,8 +38,8 @@
  Top alternatives&mldr;
  Kind Minikube   The idea I&rsquo;ve been working with ArgoCD in production for a few years now and it is in my opinion the biggest game changer in terms of Kubernetes continuous delivery management."><meta itemprop=datePublished content="2021-08-09T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-09T00:00:00+00:00">
-<meta itemprop=wordCount content="516">
-<meta itemprop=keywords content="k3d,argocd,"><meta name=twitter:card content="summary">
+<meta itemprop=wordCount content="512">
+<meta itemprop=keywords content="k3d,argocd,gitops,kubernetes,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="K3d + ArgoCD = Local GitOps">
 <meta name=twitter:description content="The pre-ramble A quick look at what ArgoCD and K3d are&mldr;
  What is ArgoCD?
@@ -133,8 +133,8 @@ POSTS
 <h2 id=the-how>The how</h2>
 <p>There are some great tutorials on setting up K3d locally and running ArgoCD (I&rsquo;ll link to these in the references).<br>
 My twist on this is to bootstrap the whole process down to a single command with as few pre-requisites as possible. I&rsquo;ve been working on this <a href=https://github.com/davidwmcneill/gitops-playground>here</a></p>
-<p>Not wishing to rewrite the readme again here, the bootstrap wraps the k3d install script passing in a base level configuration for the cluster (To simulate a real custer of sorts as opposed to a single node).</p>
-<p>ArgoCD gets installed using a Kubernetes job that runs Helm (This is to remove Helm itself as a prerequisite)\</p>
+<p>To summaries the readme: the bootstrap wraps the k3d install script passing in a base level configuration for the cluster (To simulate a real custer of sorts as opposed to a single node).</p>
+<p>ArgoCD gets installed using a Kubernetes job that runs Helm (This is to remove Helm itself as a prerequisite)</p>
 <hr>
 <h2 id=the-gitops-magic>The GitOps magic</h2>
 <p>Once ArgoCD installs in the cluster it automatically synchronizes the remaining cluster requirements - critically in this case an ingress controller. I&rsquo;ve chosen to use <a href=https://kubernetes.github.io/ingress-nginx/>Ingress-Nginx</a> in place of the K3d default Traefik.</p>
@@ -142,8 +142,8 @@ My twist on this is to bootstrap the whole process down to a single command with
 <p>Ingress-Nginx and the rest of the application stack are managed using GitOps and synchronized from the &lsquo;Local&rsquo; branch of the repository <a href=https://github.com/davidwmcneill/gitops-playground-apps>here</a></p>
 <hr>
 <h2 id=now-what>Now what?</h2>
-<p>In the time it takes to run the bootstrap a developer has a fully functional local Kubernetes cluster ready to work with GitOps! Developers can branch off &lsquo;Local&rsquo; to shape the cluster to their needs and merge back in to share with other developers who will get the update all within a local context.</p>
-<p>The nice part is that we don&rsquo;t need to use loads of different local ports (as can sometimes be the case with docker compose). We can expose any browser based service we need via a path based ingress behind the ingress controller.</p>
+<p>In the time it takes to run the bootstrap a developer has a fully functional local Kubernetes cluster ready to work with GitOps! Developers can branch from &lsquo;Local&rsquo; to shape the cluster to their needs and merge back in to share with other developers who will get the update all within a local context.</p>
+<p>The nice part is that we don&rsquo;t need to use a local port per service (as can sometimes be the case with docker compose). We can expose any browser based service we need via a path based ingress behind the ingress controller.</p>
 <p>In future posts I&rsquo;ll look at some of the projects I&rsquo;ve deployed using this stack to learn new technologies!</p>
 <hr>
 <h2 id=references>References</h2>
@@ -158,6 +158,12 @@ My twist on this is to bootstrap the whole process down to a single command with
 </li>
 <li class=list>
 <a href=../../tags/argocd class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">argocd</a>
+</li>
+<li class=list>
+<a href=../../tags/gitops class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">gitops</a>
+</li>
+<li class=list>
+<a href=../../tags/kubernetes class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">kubernetes</a>
 </li>
 </ul>
 <div class="mt6 instapaper_ignoref">
