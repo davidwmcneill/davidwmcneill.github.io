@@ -4,14 +4,16 @@
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <title>GitOps in practice | A DevOps Odyssey</title>
 <meta name=viewport content="width=device-width,minimum-scale=1">
-<meta name=description content="GitOps in practice Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr; What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
+<meta name=description content="Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr;
+What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
 To Quote from WeaveWorks:
  GitOps works by using Git as a single source of truth for declarative infrastructure and applications. With GitOps, the use of software agents can alert on any divergence between Git with what&rsquo;s running in a cluster, and if there&rsquo;s a difference, Kubernetes reconcilers automatically update or rollback the cluster depending on the case.">
 <meta name=generator content="Hugo 0.87.0">
 <meta name=ROBOTS content="NOINDEX, NOFOLLOW">
 <link rel=stylesheet href=../../ananke/css/main.min.css>
 <meta property="og:title" content="GitOps in practice">
-<meta property="og:description" content="GitOps in practice Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr; What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
+<meta property="og:description" content="Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr;
+What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
 To Quote from WeaveWorks:
  GitOps works by using Git as a single source of truth for declarative infrastructure and applications. With GitOps, the use of software agents can alert on any divergence between Git with what&rsquo;s running in a cluster, and if there&rsquo;s a difference, Kubernetes reconcilers automatically update or rollback the cluster depending on the case.">
 <meta property="og:type" content="article">
@@ -19,14 +21,16 @@ To Quote from WeaveWorks:
 <meta property="article:published_time" content="2021-08-10T00:00:00+00:00">
 <meta property="article:modified_time" content="2021-08-10T00:00:00+00:00">
 <meta itemprop=name content="GitOps in practice">
-<meta itemprop=description content="GitOps in practice Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr; What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
+<meta itemprop=description content="Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr;
+What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
 To Quote from WeaveWorks:
  GitOps works by using Git as a single source of truth for declarative infrastructure and applications. With GitOps, the use of software agents can alert on any divergence between Git with what&rsquo;s running in a cluster, and if there&rsquo;s a difference, Kubernetes reconcilers automatically update or rollback the cluster depending on the case."><meta itemprop=datePublished content="2021-08-10T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-10T00:00:00+00:00">
-<meta itemprop=wordCount content="479">
+<meta itemprop=wordCount content="504">
 <meta itemprop=keywords content="gitops,argocd,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="GitOps in practice">
-<meta name=twitter:description content="GitOps in practice Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr; What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
+<meta name=twitter:description content="Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr;
+What is GitOps and why do I need it? Just another buzzword? I personally don&rsquo;t think so.
 To Quote from WeaveWorks:
  GitOps works by using Git as a single source of truth for declarative infrastructure and applications. With GitOps, the use of software agents can alert on any divergence between Git with what&rsquo;s running in a cluster, and if there&rsquo;s a difference, Kubernetes reconcilers automatically update or rollback the cluster depending on the case.">
 </head>
@@ -76,8 +80,7 @@ POSTS
 <h1 class="f1 athelas mt3 mb1">GitOps in practice</h1>
 <time class="f6 mv4 dib tracked" datetime=2021-08-10T00:00:00Z>August 10, 2021</time>
 </header>
-<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id=gitops-in-practice>GitOps in practice</h2>
-<h2 id=previously-i-looked-at-k3d-with-argocd-and-recklessly-threw-in-gitops-without-a-real-explanation>Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr;</h2>
+<div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Previously I looked at K3d with ArgoCD and recklessly threw in GitOps without a real explanation&mldr;</p>
 <h2 id=what-is-gitops-and-why-do-i-need-it>What is GitOps and why do I need it?</h2>
 <p>Just another buzzword? I personally don&rsquo;t think so.<br>
 To Quote from <a href=https://www.weave.works/technologies/gitops/>WeaveWorks</a>:</p>
@@ -88,8 +91,8 @@ To Quote from <a href=https://www.weave.works/technologies/gitops/>WeaveWorks</a
 <p>Cant beat the feeling of looking at an ArgoCD dashboard that spans multiple clusters with everything perfectly in synchronization!</p>
 <p>This becomes even more powerful when the infrastructure tooling and the application stack itself can all be managed in exactly the same way. No need to access the running system anymore, absolutely everything is done via Git&mldr;.</p>
 <ul>
-<li>Who and when update &lsquo;x&rsquo; service? Check the Git PR</li>
-<li>We started seeing increased number of 4xx errors at 2pm, did anything change? Check Git</li>
+<li>When was &lsquo;x&rsquo; service updated? Check the Git PR</li>
+<li>Alerts for increased volume of 5xx errors since 2pm, did anything change? Check Git</li>
 <li>What is the diff between v1.45 and v1.46 in the Helm chart for &lsquo;x&rsquo; service? Check ArgoCD (This can prove really useful for external Helm charts)</li>
 </ul>
 <hr>
@@ -97,27 +100,27 @@ To Quote from <a href=https://www.weave.works/technologies/gitops/>WeaveWorks</a
 <p>I&rsquo;m using <a href=https://github.com/davidwmcneill/gitops-playground-apps>this</a> repository for my local experiments with GitOps. The goal of the project:</p>
 <ul>
 <li>Testing ArgoCD itself for upgrades and template patterns before moving to live platforms</li>
-<li>Experimenting with new Kubernetes tools which can easily be removed when I run low on resources whilst maintaining a git state allowing for a quick startup again in the future</li>
+<li>Experimenting with new Kubernetes tools which can easily be removed when resources get low, whilst maintaining a git state allowing for a quick startup again in the future</li>
 </ul>
 <h3 id=app-of-apps>App of Apps</h3>
-<p>By implementing ArgoCD in an declarative setup, there is a concept refereed to as <a href=https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#app-of-apps>App of apps</a>
-This allows for a top level to bootstrap sub layers of apps.<br>
+<p>By implementing ArgoCD in an declarative setup, there is a concept referred to as <a href=https://argoproj.github.io/argo-cd/operator-manual/declarative-setup/#app-of-apps>App of apps</a>
+This allows for a top level to bootstrap sub layers of applications.<br>
 In a production grade setup this can be really useful for grouping application stacks by teams, functions etc, each with their own project level permissions.<br>
 For simplicity in the local stack all apps are currently sitting under a single top level app and project, but it gives an idea for the use case.</p>
+<p>This also becomes really useful for generating the parent apps in a Helm template. There is a really nice example and explanation of this <a href=https://github.com/stevesea/argocd-helm-app-of-apps-example>here</a> which I have used as a foundation for the application template.</p>
 <h3 id=templates-and-manifests>Templates and Manifests</h3>
-<p>ArgoCD supports a range manifest types. Primarily I&rsquo;ve used Helm. But more and more I see good justification to use Kustomize. I might look to use this more in the future.</p>
+<p>ArgoCD supports a range manifest types. Primarily I&rsquo;ve used <a href=https://helm.sh/>Helm</a>. More recently I&rsquo;ve started to use <a href=https://kustomize.io/>Kustomize</a> and might look to incorporate this more in the future.</p>
 <hr>
 <h2 id=tips-and-tricks>Tips and Tricks</h2>
 <p>Through working with ArgoCD I&rsquo;ve come across and number of well thought out features. Some of the most useful being:</p>
 <ul>
-<li>Pulling the ArgoCD cli binary from the ArgoCD server. This is really useful when using the cli as part of a CICD pipeline. Whenever you upgrade ArgoCD, the cli used else where will always be on the same version</li>
+<li>Pulling the ArgoCD <a href=https://argoproj.github.io/argo-cd/user-guide/ci_automation/#synchronize-the-app-optional>CLI binary</a> directly from the ArgoCD server. This is really useful when using the cli as part of a CICD pipeline. Whenever you upgrade ArgoCD, the cli used elsewhere will always be on the same version</li>
 </ul>
 <hr>
 <h2 id=reference>Reference</h2>
 <ul>
 <li><a href=https://www.weave.works/technologies/gitops/>https://www.weave.works/technologies/gitops/</a></li>
 <li><a href=https://www.weave.works/technologies/gitops-frequently-asked-questions/>https://www.weave.works/technologies/gitops-frequently-asked-questions/</a></li>
-<li></li>
 </ul>
 <ul class=pa0>
 <li class=list>
