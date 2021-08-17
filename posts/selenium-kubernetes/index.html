@@ -102,7 +102,7 @@ Looking in the project issues I can see there is active work on a new Helm based
 <h2 id=the-setup>The setup</h2>
 <p>Taking the deployment manifest from <a href=https://raw.githubusercontent.com/SeleniumHQ/docker-selenium/trunk/k8s-deployment-full-grid.yaml>here</a>, I was able to setup a Kustomize deployment via ArgoCD to my local K3d cluster (Alternativly I could have just used <code>kubectl apply -f k8s-deployment-full-grid.yaml</code>)</p>
 <p>Deployment complete and all the pods are up and running&mldr;</p>
-<p><img src=../../static/img/selenium-argocd.png alt=selenium-argocd></p>
+<p><img src=../../img/selenium-argocd.png alt=selenium-argocd></p>
 <p>For now will use port-forwarding to test. Will later either setup the ingress or trigger the test to run inside the cluster as part of a CI/CD pipeline with Argo Workflows:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-al data-lang=al>kubectl port<span style=color:#f92672>-</span>forward -n selenium<span style=color:#f92672>-</span><span style=color:#66d9ef>grid</span> svc<span style=color:#f92672>/</span>selenium<span style=color:#f92672>-</span>router <span style=color:#ae81ff>4444</span>:<span style=color:#ae81ff>4444</span>
 </code></pre></div><p>Now to test the grid is in a ready state:</p>
@@ -111,7 +111,7 @@ Looking in the project issues I can see there is active work on a new Helm based
 <p>Finally, all being well we can also check the UI:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-al data-lang=al>http:<span style=color:#75715e>//localhost:4444/ui/index.html#/
 </span></code></pre></div><p>Looks good!</p>
-<p><img src=../../static/img/selenium.png alt=selenium></p>
+<p><img src=../../img/selenium.png alt=selenium></p>
 <h2 id=running-a-basic-test>Running a basic test</h2>
 <p>Now that I have the Grid running, I need some tests<br>
 Beginning with some <a href=https://github.com/kubernetes/examples/tree/master/staging/selenium#run-selenium-job-with-python>basic tests in Python</a>. I&rsquo;ll check that the browser nodes are working:</p>
