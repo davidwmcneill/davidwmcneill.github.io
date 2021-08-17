@@ -35,7 +35,7 @@ Looking in the project issues I can see there is active work on a new Helm based
 
 Deployment complete and all the pods are up and running...
 
-![selenium-argocd](../../static/img/selenium-argocd.png)
+![selenium-argocd](../../img/selenium-argocd.png)
 
 For now will use port-forwarding to test. Will later either setup the ingress or trigger the test to run inside the cluster as part of a CI/CD pipeline with Argo Workflows:
 ```al
@@ -54,7 +54,7 @@ http://localhost:4444/ui/index.html#/
 ```
 Looks good!
 
-![selenium](../../static/img/selenium.png)
+![selenium](../../img/selenium.png)
 
 ## Running a basic test
 Now that I have the Grid running, I need some tests\
