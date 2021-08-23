@@ -5,7 +5,7 @@ draft: false
 tags: ['kubernetes', 'Selenium', 'python']
 ---
 ## Background
-I've read and heard a lot about Selenium over the years, but never got my hands dirty. It's been on my 'todo' list for a fair while!
+A deeper look into Selenium  has been on my 'todo' list for a fair while, Time to get my hands dirty!
 
 This blog topic is a good excuse to cover off a few learning points:
 - Get an automated test running in a local k3d cluster to generate some traffic when testing progressive deployments with Argo-rollouts

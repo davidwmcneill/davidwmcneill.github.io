@@ -22,7 +22,7 @@ A catalogue of all my favorite DevOps gurus!
 [Bret Fisher Docker and DevOps](https://www.youtube.com/c/BretFisherDockerandDevOps/videos): Live stream every Thursday. Not to be missed!\
 [DevOps Toolkit by Viktor Farcic](https://www.youtube.com/c/DevOpsToolkit/featured): Covers the full spectrum of latest tools for DevOps - Focuses a lot on Kubernetes and Cloud Native ecosystem \
 [tutoriaLinux](https://www.youtube.com/c/tutoriaLinux/featured): Linux and DevOps, some really good courses and great insight\
-[CNCF](https://www.youtube.com/c/cloudnativefdn/videos): Best way to catch up on the latest events in the Cloud Native world. Specificity KubeCon and CloudNativeCon
+[CNCF](https://www.youtube.com/c/cloudnativefdn/videos): Best way to catch up on the latest events in the Cloud Native world. Specificity KubeCon and CloudNativeCon\
 [That DevOps Guy](https://www.youtube.com/user/Kamakazihoer): A vlog learning channel covering DevOps tooling
 
 
@@ -36,10 +36,32 @@ A catalogue of all my favorite DevOps gurus!
 # Blogs
 [Alex Ellis](https://blog.alexellis.io/): An inspiration!
 
+# Reddit
+I'm sure there are many more great Subreddits; these are the few I currently find most useful:
+- https://www.reddit.com/r/kubernetes/
+- https://www.reddit.com/r/Terraform/
+- https://www.reddit.com/r/devops/
+- https://www.reddit.com/r/docker/
+- https://www.reddit.com/r/serverless/
+
+
+# Slack
+Some community channels to connect with for DevOps related content\
+- kubernetes.slack.com Keep update to date with the latest releases and dedicated channels for specialist areas within Kubernetes (KOPS, GitOps etc) 
+- hangops.slack.com Social DevOps related group
+- devopschat.slack.com Large DevOps community. Channels covering elements of DevOps
+- devopsengineers.slack.com Another community group
+- cloud-native.slack.com Offical CNCF group
+- kodekloud.slack.com Group for Kubernetes certification
+- crossplane.slack.com Following the progress of [Crossplane](https://crossplane.io/)
 
 # Twitter
-
-
-# Reddit
-
-
+- https://twitter.com/brendandburns
+- https://twitter.com/danielepolencic
+- https://twitter.com/roidelapluie
+- https://twitter.com/ibuildthecloud
+- https://twitter.com/adamhjk
+- https://twitter.com/rothgar
+- https://twitter.com/a_sykim
+- https://twitter.com/clare_liguori
+- https://twitter.com/thockin
