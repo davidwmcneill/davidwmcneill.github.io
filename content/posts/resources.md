@@ -46,14 +46,14 @@ I'm sure there are many more great Subreddits; these are the few I currently fin
 
 
 # Slack
-Some community channels to connect with for DevOps related content\
-- kubernetes.slack.com Keep update to date with the latest releases and dedicated channels for specialist areas within Kubernetes (KOPS, GitOps etc) 
-- hangops.slack.com Social DevOps related group
-- devopschat.slack.com Large DevOps community. Channels covering elements of DevOps
-- devopsengineers.slack.com Another community group
-- cloud-native.slack.com Offical CNCF group
-- kodekloud.slack.com Group for Kubernetes certification
-- crossplane.slack.com Following the progress of [Crossplane](https://crossplane.io/)
+Some community channels to connect with for DevOps related content
+- https://kubernetes.slack.com Keep update to date with the latest releases and dedicated channels for specialist areas within Kubernetes (KOPS, GitOps etc) 
+- https://hangops.slack.com Social DevOps related group
+- https://devopschat.slack.com Large DevOps community. Channels covering elements of DevOps
+- https://devopsengineers.slack.com Another community group
+- https://cloud-native.slack.com Offical CNCF group
+- https://kodekloud.slack.com Group for Kubernetes certification
+- https://crossplane.slack.com Following the progress of [Crossplane](https://crossplane.io/)
 
 # Twitter
 - https://twitter.com/brendandburns
