@@ -24,10 +24,13 @@ A catalogue of all my favorite DevOps gurus!
 [tutoriaLinux](https://www.youtube.com/c/tutoriaLinux/featured): Linux and DevOps, some really good courses and great insight\
 [CNCF](https://www.youtube.com/c/cloudnativefdn/videos): Best way to catch up on the latest events in the Cloud Native world. Specificity KubeCon and CloudNativeCon\
 [That DevOps Guy](https://www.youtube.com/user/Kamakazihoer): A vlog learning channel covering DevOps tooling
+[GOTO Conferences](https://www.youtube.com/c/GotoConferences/videos): High quality conference presentations
 
 
 ## Top Videos/Presentations
-[Kelsey, Kubernetes, and GitOps - GitHub Universe 2020](https://www.youtube.com/watch?v=yIAa5wHsfw4): 30 minutes for the best explanation of GitOps out there!
+- [Kelsey, Kubernetes, and GitOps - GitHub Universe 2020](https://www.youtube.com/watch?v=yIAa5wHsfw4): 30 minutes for the best explanation of GitOps out there!
+- [3 Practices for Effective DevOps Adoption • Eoin Woods • GOTO 2020](https://www.youtube.com/watch?v=MCPrtYxuVPU): For the start of any DevOps transformation, this is a great introduction
+- [Why Your Private Cloud is Probably a Bad Idea • Sam Newman • GOTO 2019](https://www.youtube.com/watch?v=MbaPtzSuQII&t): A controversial presentation, but still very entertaining 
 
 # Podcasts
 [Bret Fisher](https://open.spotify.com/show/2q5GOLTmNGpHYmrrZ0Ik73): As per the Youtube live stream but in a podcast format when on the move\
