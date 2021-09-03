@@ -37,9 +37,9 @@ A catalogue of all my favorite DevOps gurus!
 [Kubernetes Podcast from Google](https://open.spotify.com/show/0AsnxlMtXRUEeZkIO0ScpJ): Weekly update on whats happening in the Kubernetes community
 
 # Blogs
-[Ivan Velichko](https://iximiuz.com/en/): Learning Containers, Kubernetes, and Backend Development
-[Alex Ellis](https://blog.alexellis.io/): An inspiration!
-[Justin Garrison](https://www.justingarrison.com/blog/): AWS Developer Advocate
+[Ivan Velichko](https://iximiuz.com/en/): Learning Containers, Kubernetes, and Backend Development \
+[Alex Ellis](https://blog.alexellis.io/): An inspiration! \
+[Justin Garrison](https://www.justingarrison.com/blog/): AWS Developer Advocate \
 [Hashicorp Blog](https://www.hashicorp.com/blog): The latest news and announcements about HashiCorp
 
 # Reddit
