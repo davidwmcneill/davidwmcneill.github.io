@@ -4,14 +4,14 @@
 <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
 <title>Progressive Delivery with Argo-rollouts | A DevOps Odyssey</title>
 <meta name=viewport content="width=device-width,minimum-scale=1">
-<meta name=description content="What is progressive delivery? There are a lots of definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
+<meta name=description content="What is progressive delivery? There are various definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
  Progressive delivery is the process of pushing changes to a product iteratively, first to a small audience and then to increasingly larger audiences to maintain quality control. Progressive Delivery is a modified version of Continuous Delivery
  There are a few options for implementing progressive delivery within a kubernetes cluster (see also flagger).">
 <meta name=generator content="Hugo 0.87.0">
 <meta name=ROBOTS content="NOINDEX, NOFOLLOW">
 <link rel=stylesheet href=../../ananke/css/main.min.css>
 <meta property="og:title" content="Progressive Delivery with Argo-rollouts">
-<meta property="og:description" content="What is progressive delivery? There are a lots of definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
+<meta property="og:description" content="What is progressive delivery? There are various definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
  Progressive delivery is the process of pushing changes to a product iteratively, first to a small audience and then to increasingly larger audiences to maintain quality control. Progressive Delivery is a modified version of Continuous Delivery
  There are a few options for implementing progressive delivery within a kubernetes cluster (see also flagger).">
 <meta property="og:type" content="article">
@@ -19,14 +19,14 @@
 <meta property="article:published_time" content="2021-08-23T00:00:00+00:00">
 <meta property="article:modified_time" content="2021-08-23T00:00:00+00:00">
 <meta itemprop=name content="Progressive Delivery with Argo-rollouts">
-<meta itemprop=description content="What is progressive delivery? There are a lots of definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
+<meta itemprop=description content="What is progressive delivery? There are various definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
  Progressive delivery is the process of pushing changes to a product iteratively, first to a small audience and then to increasingly larger audiences to maintain quality control. Progressive Delivery is a modified version of Continuous Delivery
  There are a few options for implementing progressive delivery within a kubernetes cluster (see also flagger)."><meta itemprop=datePublished content="2021-08-23T00:00:00+00:00">
 <meta itemprop=dateModified content="2021-08-23T00:00:00+00:00">
-<meta itemprop=wordCount content="765">
+<meta itemprop=wordCount content="763">
 <meta itemprop=keywords content="argo-rollouts,kubernetes,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Progressive Delivery with Argo-rollouts">
-<meta name=twitter:description content="What is progressive delivery? There are a lots of definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
+<meta name=twitter:description content="What is progressive delivery? There are various definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via devopsinsitute
  Progressive delivery is the process of pushing changes to a product iteratively, first to a small audience and then to increasingly larger audiences to maintain quality control. Progressive Delivery is a modified version of Continuous Delivery
  There are a few options for implementing progressive delivery within a kubernetes cluster (see also flagger).">
 </head>
@@ -77,11 +77,11 @@ POSTS
 <time class="f6 mv4 dib tracked" datetime=2021-08-23T00:00:00Z>August 23, 2021</time>
 </header>
 <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id=what-is-progressive-delivery>What is progressive delivery?</h1>
-<p>There are a lots of definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via <a href=https://www.devopsinstitute.com/progressive-delivery/>devopsinsitute</a></p>
+<p>There are various definitions of &lsquo;progressive delivery&rsquo; so I&rsquo;ll go with the one I find to be the most concise via <a href=https://www.devopsinstitute.com/progressive-delivery/>devopsinsitute</a></p>
 <blockquote>
 <p>Progressive delivery is the process of pushing changes to a product iteratively, first to a small audience and then to increasingly larger audiences to maintain quality control. Progressive Delivery is a modified version of Continuous Delivery</p>
 </blockquote>
-<p>There are a few options for implementing progressive delivery within a kubernetes cluster (see also <a href=https://flagger.app/>flagger</a>). If this post I&rsquo;ll be using <a href=https://argoproj.github.io/argo-rollouts/>Argo rollouts</a>.</p>
+<p>There are a few options for implementing progressive delivery within a kubernetes cluster (see also <a href=https://flagger.app/>flagger</a>). In this post I&rsquo;ll be using <a href=https://argoproj.github.io/argo-rollouts/>Argo rollouts</a>.</p>
 <h1 id=overview>Overview</h1>
 <p>In short, Argo rollouts can be used as a replacement for the &lsquo;Deployment&rsquo; resource in Kubernetes to support more advanced deployment techniques than what is supported natively. <a href=https://argoproj.github.io/argo-rollouts/#what-is-argo-rollouts>Here</a> is a full explanation.</p>
 <p>For this post, I&rsquo;m going to use the <a href=https://argoproj.github.io/argo-rollouts/concepts/#canary>canary analysis</a> rollout option, utilizing metrics from Prometheus to determine if the deployment to the new version should continue.</p>
