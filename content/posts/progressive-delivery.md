@@ -6,11 +6,11 @@ tags: ['argo-rollouts', 'kubernetes']
 ---
 
 # What is progressive delivery?
-There are a lots of definitions of 'progressive delivery' so I'll go with the one I find to be the most concise via [devopsinsitute](https://www.devopsinstitute.com/progressive-delivery/)
+There are various definitions of 'progressive delivery' so I'll go with the one I find to be the most concise via [devopsinsitute](https://www.devopsinstitute.com/progressive-delivery/)
 
 > Progressive delivery is the process of pushing changes to a product iteratively, first to a small audience and then to increasingly larger audiences to maintain quality control. Progressive Delivery is a modified version of Continuous Delivery
 
-There are a few options for implementing progressive delivery within a kubernetes cluster (see also [flagger](https://flagger.app/)). If this post I'll be using [Argo rollouts](https://argoproj.github.io/argo-rollouts/).
+There are a few options for implementing progressive delivery within a kubernetes cluster (see also [flagger](https://flagger.app/)). In this post I'll be using [Argo rollouts](https://argoproj.github.io/argo-rollouts/).
 
 # Overview
 In short, Argo rollouts can be used as a replacement for the 'Deployment' resource in Kubernetes to support more advanced deployment techniques than what is supported natively. [Here](https://argoproj.github.io/argo-rollouts/#what-is-argo-rollouts) is a full explanation.
