@@ -23,7 +23,7 @@ A catalogue of all my favorite DevOps gurus!
 [DevOps Toolkit by Viktor Farcic](https://www.youtube.com/c/DevOpsToolkit/featured): Covers the full spectrum of latest tools for DevOps - Focuses a lot on Kubernetes and Cloud Native ecosystem \
 [tutoriaLinux](https://www.youtube.com/c/tutoriaLinux/featured): Linux and DevOps, some really good courses and great insight\
 [CNCF](https://www.youtube.com/c/cloudnativefdn/videos): Best way to catch up on the latest events in the Cloud Native world. Specificity KubeCon and CloudNativeCon\
-[That DevOps Guy](https://www.youtube.com/user/Kamakazihoer): A vlog learning channel covering DevOps tooling
+[That DevOps Guy](https://www.youtube.com/user/Kamakazihoer): A vlog learning channel covering DevOps tooling\
 [GOTO Conferences](https://www.youtube.com/c/GotoConferences/videos): High quality conference presentations
 
 
@@ -53,22 +53,22 @@ I'm sure there are many more great Subreddits; these are the few I currently fin
 
 # Slack
 Some community channels to connect with for DevOps related content \
-- https://kubernetes.slack.com Keep update to date with the latest releases and dedicated channels for specialist areas within Kubernetes (KOPS, GitOps etc) \
-- https://hangops.slack.com Social DevOps related group \
-- https://devopschat.slack.com Large DevOps community. Channels covering elements of DevOps \
-- https://devopsengineers.slack.com Another community group \
-- https://cloud-native.slack.com Offical CNCF group \
-- https://kodekloud.slack.com Group for Kubernetes certification \
-- https://crossplane.slack.com Following the progress of [Crossplane](https://crossplane.io/) \
+- https://kubernetes.slack.com Keep update to date with the latest releases and dedicated channels for specialist areas within Kubernetes (KOPS, GitOps etc) 
+- https://hangops.slack.com Social DevOps related group 
+- https://devopschat.slack.com Large DevOps community. Channels covering elements of DevOps 
+- https://devopsengineers.slack.com Another community group 
+- https://cloud-native.slack.com Offical CNCF group 
+- https://kodekloud.slack.com Group for Kubernetes certification 
+- https://crossplane.slack.com Following the progress of [Crossplane](https://crossplane.io/) 
 
 
 # Twitter
-- https://twitter.com/brendandburns \
-- https://twitter.com/danielepolencic \
-- https://twitter.com/roidelapluie \
-- https://twitter.com/ibuildthecloud \
-- https://twitter.com/adamhjk \
-- https://twitter.com/rothgar \
-- https://twitter.com/a_sykim \
-- https://twitter.com/clare_liguori \
-- https://twitter.com/thockin \
+- https://twitter.com/brendandburns 
+- https://twitter.com/danielepolencic 
+- https://twitter.com/roidelapluie 
+- https://twitter.com/ibuildthecloud 
+- https://twitter.com/adamhjk 
+- https://twitter.com/rothgar 
+- https://twitter.com/a_sykim 
+- https://twitter.com/clare_liguori 
+- https://twitter.com/thockin 
